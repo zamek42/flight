@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<airlines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="./flights.xsd">
+
+	<airline name="KLM">
+		<flights>
+			<flight flightId="KLM1" from="Budapest" to="Moscow" distance="1565" during="1" />
+			<flight flightId="KLM2" from="Budapest" to="Kiev" distance="896" during="1" />
+			<flight flightId="KLM3" from="Budapest" to="Cluj-Napoca" distance="350" during="1" />
+			<flight flightId="KLM4" from="Budapest" to="Bucharest" distance="645" during="1" />
+			<flight flightId="KLM5" from="Budapest" to="Istanbul" distance="1073" during="1" />
+			<flight flightId="KLM6" from="Budapest" to="Bari" distance="739" during="1" />
+			<flight flightId="KLM7" from="Budapest" to="Rome" distance="821" during="1" />
+			<flight flightId="KLM8" from="Budapest" to="Milan" distance="791" during="1" />
+			<flight flightId="KLM9" from="Budapest" to="Barcelona" distance="1502" during="1" />
+			<flight flightId="KLM10" from="Budapest" to="Madrid" distance="1974" during="1" />
+			<flight flightId="KLM11" from="Budapest" to="Paris" distance="1241" during="1" />
+			<flight flightId="KLM12" from="Budapest" to="Vienna" distance="220" during="1" />
+			<flight flightId="KLM13" from="Budapest" to="Frankfurt" distance="813" during="1" />
+			<flight flightId="KLM14" from="Budapest" to="Berlin" distance="678" during="1" />
+			<flight flightId="KLM15" from="Budapest" to="Amsterdam" distance="710" during="1" />
+			<flight flightId="KLM16" from="Budapest" to="London" distance="1450" during="1" />
+			<flight flightId="KLM17" from="Budapest" to="Dublin" distance="1897" during="1" />
+			<flight flightId="KLM18" from="London" to="Miami" distance="7133" during="1" />
+			<flight flightId="KLM19" from="London" to="New York" distance="5580" during="1" />
+			<flight flightId="KLM20" from="New York" to="Las Vegas" distance="3571" during="1" />
+			<flight flightId="KLM21" from="New York" to="Phoenix" distance="3450" during="1" />
+			<flight flightId="KLM22" from="New York" to="Atlanta" distance="1200" during="1" />
+			<flight flightId="KLM23" from="New York" to="Houston" distance="2259" during="1" />
+			<flight flightId="KLM24" from="New York" to="Denver" distance="2605" during="1" />
+			<flight flightId="KLM25" from="New York" to="Los Angeles" distance="3927" during="1" />
+			<flight flightId="KLM26" from="New York" to="San Francisco" distance="4130"	during="1" />
+			<flight flightId="KLM27" from="New York" to="Miami" distance="1764" during="1" />
+		</flights>
+	</airline>
+
+	<airline name="WizzAir">
+		<flights>
+			<flight flightId="WIZZ1" from="Budapest" to="Baku" distance="2571" during="1" />
+			<flight flightId="WIZZ2" from="Budapest" to="Tirana" distance="700" during="1" />
+			<flight flightId="WIZZ3" from="Budapest" to="Brussels" distance="1120" during="1" />
+			<flight flightId="WIZZ4" from="Budapest" to="Sarajevo" distance="418" during="1" />
+			<flight flightId="WIZZ5" from="Budapest" to="Burgas" distance="864" during="1" />
+			<flight flightId="WIZZ6" from="Budapest" to="Larnaka" distance="1857" during="1" />
+			<flight flightId="WIZZ7" from="Budapest" to="Dubai" distance="4028" during="1" />
+			<flight flightId="WIZZ8" from="Budapest" to="Bordeaux" distance="1542" during="1" />
+			<flight flightId="WIZZ9" from="Budapest" to="Athens" distance="1131" during="1" />
+			<flight flightId="WIZZ10" from="Budapest" to="Rodos" distance="1452" during="1" />
+			<flight flightId="WIZZ11" from="Budapest" to="Thessaloniki" distance="819" during="1" />
+			<flight flightId="WIZZ12" from="Budapest" to="Eindhoven" distance="1066" during="1" />
+			<flight flightId="WIZZ13" from="Budapest" to="Reykjavík" distance="3065" during="1" />
+			<flight flightId="WIZZ14" from="Budapest" to="Tel Aviv-Yafo" distance="2167" during="1" />
+			<flight flightId="WIZZ15" from="Budapest" to="Pristina" distance="558" during="1" />
+			<flight flightId="WIZZ16" from="Budapest" to="Warsaw" distance="550" during="1" />
+			<flight flightId="WIZZ17" from="Budapest" to="Skopje" distance="640" during="1" />
+			<flight flightId="WIZZ18" from="Budapest" to="Agadir" distance="3093" during="1" />
+			<flight flightId="WIZZ19" from="Budapest" to="Valletta" distance="1345" during="1" />
+			<flight flightId="WIZZ20" from="Budapest" to="Birmingham" distance="1587" during="1" />
+			<flight flightId="WIZZ21" from="Budapest" to="Glasgow" distance="1845" during="1" />
+			<flight flightId="WIZZ22" from="Budapest" to="Liverpool" distance="1685" during="1" />
+			<flight flightId="WIZZ23" from="Budapest" to="London" distance="1450" during="1" />
+			<flight flightId="WIZZ24" from="Budapest" to="Bergen" distance="1684" during="1" />
+			<flight flightId="WIZZ25" from="Budapest" to="Berlin" distance="678" during="1" />
+			<flight flightId="WIZZ26" from="Budapest" to="Dortmund" distance="939" during="1" />
+			<flight flightId="WIZZ27" from="Budapest" to="Frankfurt" distance="813" during="1" />
+			<flight flightId="WIZZ28" from="Budapest" to="Hannover" distance="859" during="1" />
+			<flight flightId="WIZZ29" from="Budapest" to="Bari" distance="739" during="1" />
+			<flight flightId="WIZZ30" from="Budapest" to="Bologna" distance="685" during="1" />
+			<flight flightId="WIZZ31" from="Budapest" to="Catania" distance="1149" during="1" />
+			<flight flightId="WIZZ32" from="Budapest" to="Milan" distance="791" during="1" />
+			<flight flightId="WIZZ33" from="Budapest" to="Naples" distance="829" during="1" />
+			<flight flightId="WIZZ34" from="Budapest" to="Rome" distance="821" during="1" />
+			<flight flightId="WIZZ35" from="Budapest" to="Moscow" distance="1565" during="1" />
+			<flight flightId="WIZZ36" from="Budapest" to="Faro" distance="2480" during="1" />
+			<flight flightId="WIZZ37" from="Budapest" to="Lisbon" distance="2462" during="1" />
+			<flight flightId="WIZZ38" from="Budapest" to="Porto" distance="2293" during="1" />
+			<flight flightId="WIZZ39" from="Budapest" to="Bucharest" distance="645" during="1" />
+			<flight flightId="WIZZ40" from="Budapest" to="Cluj-Napoca" distance="350" during="1" />
+			<flight flightId="WIZZ41" from="Budapest" to="Alicante" distance="1880" during="1" />
+			<flight flightId="WIZZ42" from="Budapest" to="Barcelona" distance="1504" during="1" />
+			<flight flightId="WIZZ43" from="Budapest" to="Madrid" distance="1974" during="1" />
+			<flight flightId="WIZZ44" from="Budapest" to="Malaga" distance="2262" during="1" />
+			<flight flightId="WIZZ45" from="Budapest" to="Kiev" distance="896" during="1" />
+		</flights>
+	</airline>
+
+	<airline name="EasyJet">
+		<flights>
+			<flight flightId="EJ1" from="Budapest" to="Agadir" distance="3093" during="1" />
+			<flight flightId="EJ2" from="Budapest" to="Aberdeen" distance="1775" during="1" />
+			<flight flightId="EJ3" from="Budapest" to="Alicante" distance="1880" during="1" />
+			<flight flightId="EJ4" from="Budapest" to="Amsterdam" distance="710" during="1" />
+			<flight flightId="EJ5" from="Budapest" to="Ancona" distance="610" during="1" />
+			<flight flightId="EJ6" from="Budapest" to="Athens" distance="1131" during="1" />
+			<flight flightId="EJ7" from="Budapest" to="Barcelona" distance="1504" during="1" />
+			<flight flightId="EJ8" from="Budapest" to="Bari" distance="739" during="1" />
+			<flight flightId="EJ9" from="Budapest" to="Vienna" distance="220" during="1" />
+			<flight flightId="EJ10" from="Budapest" to="Belfast" distance="1897" during="1" />
+			<flight flightId="EJ11" from="Budapest" to="Berlin" distance="678" during="1" />
+			<flight flightId="EJ12" from="Budapest" to="Birmingham" distance="1587" during="1" />
+			<flight flightId="EJ13" from="Budapest" to="Bologna" distance="685" during="1" />
+			<flight flightId="EJ14" from="Budapest" to="Brussels" distance="1120" during="1" />
+			<flight flightId="EJ15" from="Budapest" to="Catania" distance="1149" during="1" />
+			<flight flightId="EJ16" from="Budapest" to="Larnaka" distance="1857" during="1" />
+			<flight flightId="EJ17" from="Budapest" to="Faro" distance="2480" during="1" />
+			<flight flightId="EJ18" from="Budapest" to="Dubrovnik" distance="547" during="1" />
+			<flight flightId="EJ19" from="Budapest" to="Frankfurt" distance="813" during="1" />
+			<flight flightId="EJ20" from="Budapest" to="Glasgow" distance="1845" during="1" />
+			<flight flightId="EJ21" from="Budapest" to="Hamburg" distance="927" during="1" />
+			<flight flightId="EJ22" from="Budapest" to="Liverpool" distance="1685" during="1" />
+			<flight flightId="EJ23" from="Budapest" to="London" distance="1450" during="1" />
+			<flight flightId="EJ24" from="Budapest" to="Madrid" distance="1974" during="1" />
+			<flight flightId="EJ25" from="Budapest" to="Malaga" distance="2262" during="1" />
+			<flight flightId="EJ26" from="Budapest" to="Milan" distance="791" during="1" />
+			<flight flightId="EJ27" from="Budapest" to="Naples" distance="829" during="1" />
+			<flight flightId="EJ28" from="Budapest" to="Paris" distance="1241" during="1" />
+			<flight flightId="EJ29" from="Budapest" to="Porto" distance="2293" during="1" />
+			<flight flightId="EJ30" from="Budapest" to="Reykjavík" distance="3065" during="1" />
+			<flight flightId="EJ31" from="Budapest" to="Pristina" distance="558" during="1" />
+			<flight flightId="EJ32" from="Budapest" to="Rodos" distance="1452" during="1" />
+			<flight flightId="EJ33" from="Budapest" to="Tel Aviv-Yafo" distance="2167" during="1" />
+			<flight flightId="EJ34" from="Budapest" to="Zadar" distance="475" during="1" />
+		</flights>
+	</airline>
+
+</airlines>        
