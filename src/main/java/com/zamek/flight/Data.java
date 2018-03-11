@@ -34,7 +34,7 @@ public class Data implements Graph {
 	
 	/**
 	 * Get an instance for the data
-	 * @return
+	 * @return  instance of the singleton
 	 */
 	public synchronized static Data getInstance() {
 		if (instance==null)
