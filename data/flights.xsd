@@ -34,7 +34,8 @@
 			<xs:attribute name="from" type="xs:string" use="required"/>
 			<xs:attribute name="to" type="xs:string" use="required"/>
 			<xs:attribute name="distance" type="xs:positiveInteger" use="required"/>
-			<xs:attribute name="during" type="xs:positiveInteger" use="required"/>
+			<xs:attribute name="during" type="xs:time" use="required"/>
+			<xs:attribute name="departure" type="xs:time" use="required"/>
 		</xs:complexType>
 	</xs:element>
 </xs:schema>        

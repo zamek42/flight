@@ -1,43 +1,59 @@
 package com.zamek.flight;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.apache.commons.lang3.StringUtils;
-
+/**
+ * City of flights
+ * 
+ * @author zamek
+ *
+ */
 public class City {
 
 	private String name;
 	private int population;
-	private Set<Flight> flights;
 	
+	/**
+	 * Constructor for city 
+	 * @param name name of the city
+	 * @param population population of the city
+	 */
 	public City(String name, int population) {
 		this.name = name;
 		this.population = population;
-		this.flights = new HashSet<>();
 	}
 
+	/**
+	 * Getter for name of the city
+	 * @return name of the city
+	 */
 	public String getName() {
 		return this.name;
 	}
 
+	/**
+	 * Setter for name of the city
+	 * @param name name of the city
+	 */
 	public void setName(String name) {
 		if (!StringUtils.isBlank(name))
 			this.name = name;
 	}
 
+	/**
+	 * Getter for population
+	 * @return population
+	 */
 	public int getPopulation() {
 		return this.population;
 	}
 
+	/**
+	 * Setter for population 
+	 * @param population cannot be negative
+	 */
 	public void setPopulation(int population) {
 		if (population>=0)
 			this.population = population;
-	}
-
-	public void addFlight(Flight flight) {
-		if (!this.flights.contains(flight))
-			this.flights.add(flight);
 	}
 
 	@Override
@@ -47,10 +63,6 @@ public class City {
 		result = prime * result + ((this.name == null) ? 0 : this.name.hashCode());
 		result = prime * result + this.population;
 		return result;
-	}
-
-	public int getFligtsCounts() {
-		return this.flights.size();
 	}
 	
 	@Override

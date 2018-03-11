@@ -2,6 +2,7 @@ package com.zamek.flight.factory;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -105,7 +106,7 @@ public class XMLFactory extends DefaultHandler implements HasLogger {
 	}
 	
 	@Override
-	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException, DateTimeParseException {
 		switch (qName) {
 		case Airline.NODE_NAME : this.currentAirline = new Airline(attributes.getValue(Airline.ATTR_NAME));
 								 this.airlines.add(this.currentAirline);
@@ -126,7 +127,7 @@ public class XMLFactory extends DefaultHandler implements HasLogger {
 			this.currentAirline = null;
 	}
 	
-	private void createFlight(Attributes attributes) {
+	private void createFlight(Attributes attributes) throws DateTimeParseException {
 		City from = createCity(attributes.getValue(Flight.ATTR_FROM));
 		if (from==null) 
 			return;
@@ -137,6 +138,8 @@ public class XMLFactory extends DefaultHandler implements HasLogger {
 		
 		Optional<Flight> fl = new Flight.Builder()
 								.id(attributes.getValue(Flight.ATTR_ID))
+								.departure(attributes.getValue(Flight.ATTR_DEPARTURE))
+								.during(attributes.getValue(Flight.ATTR_DURING))
 								.airLine(this.currentAirline)
 								.source(from)
 								.destination(to)
@@ -145,12 +148,7 @@ public class XMLFactory extends DefaultHandler implements HasLogger {
 		if (!fl.isPresent())
 			return;
 		
-		Flight straight = fl.get(); 
-		from.addFlight(straight);
-		Flight reverse = straight.getReverse();
-		to.addFlight(reverse);
-		this.flights.add(straight);
-		this.flights.add(reverse);
+		this.flights.add(fl.get());
 	}
 	
 	private City createCity(String name) {

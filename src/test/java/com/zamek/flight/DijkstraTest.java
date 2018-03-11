@@ -3,8 +3,10 @@ package com.zamek.flight;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 import org.junit.BeforeClass;
@@ -33,6 +35,17 @@ public class DijkstraTest {
 		System.out.println("City of the largest population is "+ max.get());  //$NON-NLS-1$
 		DijkstraEngine de = new DijkstraEngine(Data.getInstance());
 		de.execute(min.get());
-		LinkedList<City> path = de.getPath(max.get());		
+		Map<Airline, LinkedList<Flight>> paths=new HashMap<>();
+		for(Airline al:Data.getInstance().getAirlines()) {
+			LinkedList<Flight> path = de.getPath(max.get(), al);
+			if (path != null)
+				paths.put(al, path);
+		}			
+		if (paths.isEmpty()) 
+			Data.printPath(min.get(), max.get(), de.getPath(max.get()));
+		else 
+			for(Map.Entry<Airline, LinkedList<Flight>> e:paths.entrySet())
+				Data.printPath(min.get(), max.get(), e.getValue());
+		
 	}
 }
